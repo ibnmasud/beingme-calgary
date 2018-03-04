@@ -5,7 +5,7 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Source Sans Pro';
+  font-family: "Roboto", Helvetica, sans-serif;
   font-weight:700;
 }
 
@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .fancyTab a {
-	font-family: 'Source Sans Pro';
+  font-family: "Roboto", Helvetica, sans-serif;
 	font-size:1.65em;
 	font-weight:300;
   transition:.2s;
@@ -343,4 +343,56 @@ li.fancyTab.active a {
       }
     }
   }
+  .aliali {
+    background-color: floralwhite !important;
+    
+    
+  }
+}
+
+.faqHeader {
+    font-size: 27px;
+    margin: 20px;
+}
+.panel-collapse {
+  color: #e44c65
+}
+.panel-title a:hover {
+  color: #00000050 !important;
+  text-decoration: none
+}
+.panel-collapse strong {
+  color: #e44c65
+}
+
+.panel-heading {
+  background-color: #e44c65 !important;
+  border-color: #e44c65 !important;
+}
+.panel-default {
+  border-color: #e44c65 !important;
+}
+.panel-heading [data-toggle="collapse"]:after {
+    font-family: 'FontAwesome';
+    content: "\f078"; /* "play" icon */
+    float: right;
+    color: gray;
+    font-size: 18px;
+    line-height: 22px;
+    /* rotate "play" icon from > (right arrow) to down arrow */
+/*    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg); */
+}
+
+.panel-heading [data-toggle="collapse"].collapsed:after {
+    /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
+/*    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg); */
+    color: white;
 }

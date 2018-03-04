@@ -4,7 +4,15 @@
             
             <div class="box alt">
                 <div class="row uniform">
-                    <section class="4u 6u(medium) 12u$(xsmall)">
+                    {{ range $i,$e:= where .Data.Pages "Type" "speaker" }}
+                    
+                        <section class="4u{{ if eq (mod (add $i 1) 3) 0}}${{ end }} 6u{{ if eq (mod (add $i 1) 2) 0}}${{ end }}(medium) 12u$(xsmall)">
+                                <img style="border-radius: 10px" height="250" src="{{ .Params.image }}">
+                                <h3>{{ .Params.name }}</h3>
+                            <p>{{ .Params.description }}</p>
+                        </section>
+                    {{ end }}
+                    <!--section class="4u 6u(medium) 12u$(xsmall)">
                             <img src="images/hijabicon3.png">
                             <h3>SPEAKER 1</h3>
                         <p>She studied at the feet of her parents, who are both world renowned scholars of Islam. Her focus is the Qur’an and she works for one of the world’s premier Islamic institutes.</p>
@@ -34,7 +42,7 @@
                             <img src="images/hijabicon3.png">
                             <h3>SPEAKER 6</h3>
                         <p>Scholar of many letters. BCh MSc MD PhD. Marriage & Family Counsellor. Licensed Sexologist and the host of her own Television show.</p>
-                    </section>
+                    </section -->
                     
                 </div>
             </div>
