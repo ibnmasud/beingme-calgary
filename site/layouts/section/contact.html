@@ -1,24 +1,79 @@
-{{ define "main" }}
+<!DOCTYPE HTML>
+<base href="/">
 
-<div class="ph3 bg-off-white">
-	<div class="center mw6 pv3">
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	{{ partial "headsingle" . }}
+	<body>
+		<div id="page-wrapper">
 
-		<img src="{{ .Params.logo }}" alt="" class="db w4 center pv4">
+			{{ partial "head" .}}
 
-		{{ .Content }}
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2 style="
+							font-size: 3em;
+						" class="hh2">{{ .Params.title }}</h2>
+							<!--p>Ipsum dolor feugiat aliquam tempus sed magna lorem consequat accumsan</p-->
+						</header>
 
-		<div class="flex-ns mb3">
-	        	{{ range .Params.contact_entries }}
-				<div>
-					<h4 class="f4 b lh-title mb2 primary">{{ .heading }}</h4>
-					<p>{{ .text }}</p>
+						<!-- Content -->
+						
+							<section id="content">
+								
+								<a class="image fit"><img src="{{ .Params.image }}" alt="" /></a>
+									
+										
+								
+							</section>
+
+							<!-- Form -->
+							<section style="width:80%; margin: 0 auto">
+									<form name="contactus" method="post" action="#">
+										<div class="row uniform 50%">
+											<div class="6u 12u$(xsmall)">
+												<input type="text" name="name" id="name" value="" placeholder="Name" />
+											</div>
+											<div class="6u$ 12u$(xsmall)">
+												<input type="email" name="email" id="email" value="" placeholder="Email" />
+											</div>
+											
+											<div class="12u$">
+												<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+											<div class="12u$">
+												<ul class="actions">
+													<li><input type="submit" value="Send Message" class="special" /></li>
+													<li><input type="reset" value="Reset" /></li>
+												</ul>
+											</div>
+										</div>
+									</form>
+								</section>
+
+					</div>
 				</div>
-			{{ end }}
+
+						{{ partial "footer" .}}
+
+
 		</div>
 
-		{{ partial "contact-form" . }}
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
 
-	</div>
-</div>
-
-{{ end }}
+	</body>
+</html>

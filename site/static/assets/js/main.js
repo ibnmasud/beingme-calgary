@@ -3,9 +3,10 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+var iftrailer = '<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GF4hHL-6qow?autoplay=1&rel=0" allowfullscreen></iframe>';
 
 (function($) {
-
+	
 	skel.breakpoints({
 		xlarge: '(max-width: 1680px)',
 		large: '(max-width: 1280px)',
@@ -15,7 +16,18 @@
 	});
 
 	$(function() {
-
+		
+		
+		$('#trailer').on('hidden.bs.modal', function (e) {
+			// do something...
+			$.cookie('trailer', 'shown');
+		})
+		$('#trailer').on('show.bs.modal', function (e) {
+			// do something...
+			$("#ytrailer").html(iftrailer)
+		})
+		if(!$.cookie('trailer') ||  $.cookie('trailer') !== "shown")
+			$('#trailer').modal('show')
 		var	$window = $(window),
 			$body = $('body');
 

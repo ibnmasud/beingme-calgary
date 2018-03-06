@@ -1600,12 +1600,17 @@
 	p {
 		margin: 0 0 2em 0;
 	}
-
+	.hh2 {
+		font-size: 4em;
+		font-family: 'Rammetto One', cursive;
+		line-height: 1em;
+		-webkit-text-stroke: 1px #e44c65
+	}
 	h1, h2, h3, h4, h5, h6 {
 		color: #ffffff;
 		font-weight: 300;
 		line-height: 1em;
-		margin: 0 0 1em 0;
+		margin: 0 0 0em 0;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -2135,14 +2140,14 @@
 
 	}
 
-		header.major:after {
+		/*header.major:after {
 			background: #e44c65;
 			content: '';
 			display: inline-block;
 			height: 0.2em;
 			max-width: 20em;
 			width: 75%;
-		}
+		}*/
 
 	footer.major {
 		margin: 4em 0 0 0;
@@ -4108,4 +4113,6 @@
 	  }
 	}
 
-	
+	.modal-ku {
+		max-width: 90vw;
+	  }
