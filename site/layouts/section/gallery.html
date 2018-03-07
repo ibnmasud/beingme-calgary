@@ -24,13 +24,20 @@
 
 				<!-- Header -->
 					<header id="header">
-						<h1>Lens</h1>
-						<p>Just another fine responsive site template by <a href="http://html5up.net">HTML5 UP</a></p>
+						<a href="/" class="icon alt fa-arrow-left"> Back</a>
+						<h1>{{ .Params.title }}</h1>
 						<ul class="icons">
-							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-							<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+							{{ range $i,$e:= where .Site.Pages "Type" "mainhome" }}{{ if isset .Params "title"}}
+
+							{{ if isset .Params "twitter" }}<li><a href="{{ .Params.twitter }}" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>{{ end }}
+							{{ if isset .Params "facebook" }}<li><a href="{{ .Params.facebook }}" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>{{ end }}
+							{{ if isset .Params "linkedin" }}<li><a href="{{ .Params.linkedin }}" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>{{ end }}
+							{{ if isset .Params "instagram" }}<li><a href="{{ .Params.instagram }}" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>{{ end }}
+							{{ if isset .Params "github" }}<li><a href="{{ .Params.github }}" class="icon alt fa-github"><span class="label">GitHub</span></a></li>{{ end }}
+							{{ if isset .Params "email" }}<li><a href="{{ .Params.email }}" class="icon alt fa-envelope"><span class="label">Email</span></a></li>{{ end }}
+							{{ end }}
+							{{ end }}
+							
 						</ul>
 					</header>
 
@@ -47,12 +54,7 @@
 						
 					</section>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="copyright">
-							<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a>.</li>
-						</ul>
-					</footer>
+				
 
 			</div>
 
