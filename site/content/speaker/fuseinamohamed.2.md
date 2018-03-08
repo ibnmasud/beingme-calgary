@@ -14,7 +14,7 @@ description: >
 
   Currently, Ustadha Taimiyyah is completing her Humanities degree with a
   President’s Entrance Scholarship at the University of Waterloo.
-image: /img/taymiyyah zubair1.png
+image: /img/taymiyyah zubair.png
 type: speaker
 ---
 
