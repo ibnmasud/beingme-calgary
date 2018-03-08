@@ -4,12 +4,12 @@
             
             <div class="box alt">
                 <div class="row uniform">
-                    {{ range $i,$e:= where .Site.Pages "Type" "speaker" }}{{ if isset .Params "name"}}
+                    {{ range $i,$e:= where .Site.Pages "Type" "speaker" }}{{ if isset .Params "title"}}
 
                     
                         <section class="4u{{ if eq (mod (add $i 1) 3) 0}}${{ end }} 6u{{ if eq (mod (add $i 1) 2) 0}}${{ end }}(medium) 12u$(xsmall)">
                                 <img style="border-radius: 10px" height="250" src="{{ .Params.image }}">
-                                <h3>{{ .Params.name }}</h3>
+                                <h3>{{ .Params.title }}</h3>
                             <p>{{ .Params.description }}</p>
                         </section>
                         {{ end }}

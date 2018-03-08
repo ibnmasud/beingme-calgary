@@ -1,5 +1,5 @@
 ---
-name: Taimiyyah Zubair
+title: Taimiyyah Zubair
 description: >
   Ustadha Taimiyyah Zubair is an established teacher of Quran with a focus on
   Tafsir and Word Analysis. She is a respected and inspirational role model,

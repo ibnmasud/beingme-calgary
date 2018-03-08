@@ -1,5 +1,5 @@
 ---
-name: Nuriddeen Knight
+title: Nuriddeen Knight
 description: >
   Sr Nuriddeen Knight completed an MA in psychology with a focus on child and
   family from Columbia University. Alongside her academic degree, she studied

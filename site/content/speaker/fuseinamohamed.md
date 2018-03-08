@@ -1,5 +1,5 @@
 ---
-name: Fuseina Mohamad
+title: Fuseina Mohamad
 description: >
   Sister Fuseina Mohamad was born in Seattle, WA to Ghanaian parents. Raised in
   Jeddah, Saudi Arabia, she returned to US and completed a Master’s in
