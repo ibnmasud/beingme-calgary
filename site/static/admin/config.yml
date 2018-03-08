@@ -47,15 +47,21 @@ collections: # A list of collections the CMS should be able to edit
       
   - name: "workshop" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Workshops" # Used in the UI, ie.: "New Post"
-    folder: "site/content/programs" # The path to the folder where the documents are stored
+    folder: "site/content/workshop" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Speaker", name: "speaker", widget: "string", required: false}
       - {label: "Start Time", name: "startTime", widget: "string", required: false}
       - {label: "Type", name: "type", widget: "hidden", default: "workshop"}
-
-      
+  - name: "bus" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Bus" # Used in the UI, ie.: "New Post"
+    folder: "site/content/transportation" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Location", name: "location", widget: "string"}
+      - {label: "Address", name: "address", widget: "string"}
+      - {label: "Type", name: "type", widget: "hidden", default: "bus"}
   - name: "faq" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Faq" # Used in the UI, ie.: "New Post"
     folder: "site/content/qa" # The path to the folder where the documents are stored

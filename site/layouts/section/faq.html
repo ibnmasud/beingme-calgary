@@ -30,10 +30,10 @@
 								<a class="image fit"><img src="{{ .Params.image }}" alt="" /></a>
 								<div class="panel-group" id="accordion">
 										
-										{{ range $i,$e:= where .Site.Pages "Type" "qa" }}{{ if isset .Params "question"}}<div class="panel panel-default">
+										{{ range $i,$e:= where .Site.Pages "Type" "qa" }}{{ if isset .Params "title"}}<div class="panel panel-default">
 											<div class="panel-heading">
 												<h4 class="panel-title">
-													<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse{{$i}}">{{ .Params.question }}</a>
+													<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse{{$i}}">{{ .Params.title }}</a>
 												</h4>
 											</div>
 											<div id="collapse{{$i}}" class="panel-collapse collapse {{if eq $i 0}}in{{end}}">
