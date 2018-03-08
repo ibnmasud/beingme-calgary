@@ -4,12 +4,12 @@
 		<nav id="nav">
 			<ul>
 				<li><a href="index.html">Home</a></li>
+				<li><a href="/about">About</a></li>
 				<li><a href="/speakers">Speakers</a></li>
-				<li><a href="/sponsors">Sponsors</a></li>
 				<li><a href="/program">Program</a></li>
 				<li><a href="/bus">Bus</a></li>
+				<li><a href="/sponsors">Partners</a></li>
 				<li><a href="/faq">FAQ</a></li>
-				<li><a href="/about">About</a></li>
 				<li><a href="/gallery">Gallery</a></li>
 
 					<!--li>
@@ -30,7 +30,10 @@
 					</ul>
 				</li>
 				<li><a href="elements.html">Elements</a></li-->
-				<li><a href="#" class="button special">Get Tickets</a></li>
+					{{ range where .Site.Pages "Type" "mainhome" }}{{ if isset .Params "title"}}
+					<li><a href="{{ .Params.ticket }}" target="_blank" class="button special">Get Tickets</a></li>
+					{{ end }}
+					{{ end }}
 			</ul>
 		</nav>
 	</header>
