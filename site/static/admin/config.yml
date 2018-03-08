@@ -24,6 +24,38 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Blurb", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Type", name: "type", widget: "hidden", default: "speaker"}
+  - name: "homesections" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Home Sections" # Used in the UI, ie.: "New Post"
+    folder: "site/content/homesections" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Subtitle", name: "subtitle", widget: "text"}
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Order", name: "ord", widget: "number", default: 0, valueType: "int"}
+      - {label: "Type", name: "type", widget: "hidden", default: "home"}
+  - name: "programmain" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Programs Main Hall" # Used in the UI, ie.: "New Post"
+    folder: "site/content/programs" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Speaker", name: "speaker", widget: "string", required: false}
+      - {label: "Start Time", name: "startTime", widget: "string", required: false}
+      - {label: "Type", name: "type", widget: "hidden", default: "programmain"}
+
+      
+  - name: "workshop" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Workshops" # Used in the UI, ie.: "New Post"
+    folder: "site/content/programs" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Speaker", name: "speaker", widget: "string", required: false}
+      - {label: "Start Time", name: "startTime", widget: "string", required: false}
+      - {label: "Type", name: "type", widget: "hidden", default: "workshop"}
+
+      
   - name: "faq" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Faq" # Used in the UI, ie.: "New Post"
     folder: "site/content/qa" # The path to the folder where the documents are stored
