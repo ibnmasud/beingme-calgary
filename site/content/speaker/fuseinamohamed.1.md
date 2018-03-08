@@ -2,10 +2,9 @@
 title: Nuriddeen Knight
 description: >
   Sr Nuriddeen Knight completed an MA in psychology with a focus on child and
-  family from Columbia University. Alongside her academic degree, she studied
-  traditional Islamic knowledge including Islamic law, theology, spirituality
-  and prophetic biography with local scholars and in the majalis in Amman,
-  Jordan.
+  family from Columbia University. She studied traditional Islamic knowledge
+  including fiqh, theology, spirituality and prophetic biography with local
+  scholars and in the majalis in Amman, Jordan.
    
   Her written work has been featured in thepublicdiscourse.com, mvslim.com,
   altmuslimah.com, sapelosquare.com, and thedemureist.com. She compiled a
