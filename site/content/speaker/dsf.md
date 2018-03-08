@@ -1,5 +1,5 @@
 ---
-title: Dr Heba
+title: 'Heba K '
 description: >
   Born and raised in Egypt. She completed medical school at Cairo University.
   While writing her thesis, she came across a passage in the Qur'an discussing
