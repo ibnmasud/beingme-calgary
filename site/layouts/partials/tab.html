@@ -1,9 +1,9 @@
 <div class="main 12u">
         <input class="input" id="tab1" type="radio" name="tabs" checked>
-        <label class="label" for="tab1">Day One</label>
+        <label class="label" for="tab1">Main Hall</label>
           
         <input class="input" id="tab2" type="radio" name="tabs">
-        <label class="label" for="tab2">Day Two</label>
+        <label class="label" for="tab2">Workshop</label>
         
         {{ partial "tabbody" (dict "id" "content1" "type" "programmain" "Site" .Site )}}
         {{ partial "tabbody" (dict "id" "content2" "type" "workshop" "Site" .Site )}}

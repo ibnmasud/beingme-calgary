@@ -1,7 +1,7 @@
 ---
 layout: faq
 type: section
-title: "Frequently Asked Questions"
+title: "FAQ"
 subtitle: Support sustainable farming while enjoying a cup
 image: /images/faq.jpg
 
