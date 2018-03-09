@@ -8,6 +8,33 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", Helvetica, sans-serif;
   font-weight:700;
 }
+@media screen and (max-width: 736px) {
+
+  /* Basic */
+   .hh2 {
+    line-height: 1.5em;
+    -webkit-text-stroke: .5px #e44c65;
+   }
+    html, body {
+      overflow-x: hidden;
+    }
+
+    body, input, select, textarea {
+      font-size: 12pt;
+    }
+
+    h2 {
+      font-size: 1.5em !important;
+    }
+
+    h3 {
+      font-size: 1.2em;
+    }
+
+    h4 {
+      font-size: 1em;
+    }
+  }
 
 .fancyTab {
 	text-align: center;
@@ -368,6 +395,10 @@ li.fancyTab.active a {
 .panel-heading {
   background-color: #e44c65 !important;
   border-color: #e44c65 !important;
+  padding: 10px;
+}
+.panel-body p{
+  padding: 10px;
 }
 .panel-default {
   border-color: #e44c65 !important;
