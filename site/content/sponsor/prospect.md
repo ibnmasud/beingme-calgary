@@ -1,7 +1,7 @@
 ---
 title: Prospect
 link: 'https://tryprospect.com'
-image: /img/logo.png
+image: /img/prospect-logo.svg
 type: sponsor
 ---
 
