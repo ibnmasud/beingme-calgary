@@ -1,7 +1,7 @@
 ---
-title: al-mahmud
-image: /img/mstile-310x310.png
-link: www.almahmud.com
+title: Islamic Relief
+link: 'http://islamicreliefcanada.org/'
+image: /img/reverse blue - image.png
 type: sponsor
 ---
 
