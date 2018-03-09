@@ -1,6 +1,6 @@
 ---
 title: Prospect
-link: tryprospect.com
+link: 'https://tryprospect.com'
 image: /img/logo.png
 type: sponsor
 ---
