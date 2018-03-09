@@ -1,0 +1,29 @@
+
+
+{{ $filtered:= where .Site.Pages "Type" "feature"}}
+{{ $sorted := sort $filtered ".Params.ord"}}
+{{ range $i,$e:=$sorted }}{{ if isset .Params "title"}}
+
+    <section id="one{{ $i }}" class="spotlight style1 bottom" style="background-position: center -26.55px; background-image: url('{{ .Params.image }}');">
+        <span class="image fit main {{ .Params.ord }}"><img src="{{ .Params.image }}" alt="" /></span>
+            
+            <div class="content">
+                
+                    
+                <div class="container">
+                    <div class="row">
+                        <div class="12u">
+                            <header>
+                                <h2 style="text-align: center;font-size: 3em;line-height: 3em;font-weight: 500;">{{ .Params.title }}</h2>
+                                <p>{{ .Params.subtitle }}</p>
+                            </header>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            {{ if lt $i (sub (len $sorted) 1)}}
+            <a href="#one{{add $i 1}}" class="goto-next scrolly">Next</a>{{ end }}
+        </section>
+{{ end }}
+{{ end }}
