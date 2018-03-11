@@ -1,5 +1,5 @@
 ---
-title: Yusra Ahmad
+title: Workshop by Yusra Ahmad
 description: >
   Dr. Yusra Ahmad is a Psychiatrist practicing in Toronto. She is Clinical
   Lecturer at University of Toronto and obtain her MD from the University of
