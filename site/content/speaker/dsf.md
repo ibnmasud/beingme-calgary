@@ -11,7 +11,7 @@ description: >-
   Kashmala has been a lecturer in the Department of Psychology at the Islamic
   Online University, and has also received Level 1 Pastoral Counselling training
   from the University of Toronto.
-image: ''
+image: /img/kashmala-qasim1.png
 type: speaker
 ---
 
