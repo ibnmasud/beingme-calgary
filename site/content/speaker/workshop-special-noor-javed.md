@@ -11,7 +11,7 @@ description: >-
   undergraduate work at University of Toronto, where she was a staff reporter
   for campus media. She graduated from the University of Western Ontario in 2006
   with a Master’s degree in journalism. 
-image: ''
+image: /img/noor javed.jpg
 type: speaker
 ---
 
