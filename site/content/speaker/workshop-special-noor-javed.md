@@ -1,5 +1,5 @@
 ---
-title: Workshop Special - Noor Javed
+title: Workshop by Noor Javed
 description: >-
   Noor Javed is a print and broadcast journalist; currently a reporter for the
   Toronto Star.
