@@ -7,6 +7,7 @@ subtitle: >
   more. 
 
   We've compiled a wealth of resources and activities for you. 
+image: /img/hero-3.jpg
 ord: 0
 type: feature
 ---
