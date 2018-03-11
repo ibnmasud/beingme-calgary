@@ -10,7 +10,7 @@ subtitle: >
 
   The summit provides a distinctive platform to gain insights from an exclusive
   gathering of Muslimah Leaders.
-image: /img/bm leaders summit.png
+image: /img/muslimah leaders summit.jpg
 ord: 0
 type: feature
 ---
