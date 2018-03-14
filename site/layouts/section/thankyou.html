@@ -19,7 +19,7 @@
 						<header class="major">
 							<h2 style="
 							font-size: 3em;
-						" class="hh2">{{ .Params.title }}</h2>
+						" class="hh2"></h2>
 							<!--p>Ipsum dolor feugiat aliquam tempus sed magna lorem consequat accumsan</p-->
 						</header>
 
@@ -30,19 +30,8 @@
 								<a class="image fit"><img src="{{ .Params.image }}" alt="" /></a>
 								
 								<div class="container-fluid" style="width:80%; text-align:center">
-									{{ range where .Site.Pages "Type" "mainhome" }}{{ if isset .Params "title"}}
-										<a href="{{ .Params.ticket }}" target="_blank" class="button special" onclick="return gtag_report_conversion('{{ .Params.ticket }}');">Get Tickets</a>
-									{{ end }}
-									{{ end }}	
+									{{ .Params.title}}
 									<div class="row">
-												{{ range $i,$e:= where .Site.Pages "Type" "bus" }}{{ if isset .Params "location"}}
-												<div class="col-12 col-md-6"><div><strong>{{ .Params.location }}</strong><br>{{ .Params.address }}<br>&nbsp;</div></div>{{ end }}{{ end }}
-												
-										</div>
-										{{ range where .Site.Pages "Type" "mainhome" }}{{ if isset .Params "title"}}
-							<a href="{{ .Params.ticket }}" target="_blank" class="button special" onclick="return gtag_report_conversion('{{ .Params.ticket }}');">Get Tickets</a>
-							{{ end }}
-							{{ end }}
 									  </div>
 										
 								

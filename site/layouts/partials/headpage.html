@@ -23,7 +23,7 @@
                 </li>
                 <li><a href="elements.html">Elements</a></li-->
                     {{ range where .Site.Pages "Type" "mainhome" }}{{ if isset .Params "title"}}
-                    <li><a href="{{ .Params.ticket }}" target="_blank" class="button special">Get Tickets</a></li>
+                    <li><a href="{{ .Params.ticket }}" target="_blank" class="button special" onclick="return gtag_report_conversion('{{ .Params.ticket }}');" >Get Tickets</a></li>
                     {{ end }}
                     {{ end }}
             </ul>
