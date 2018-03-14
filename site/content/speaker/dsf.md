@@ -1,5 +1,5 @@
 ---
-title: Workshop by Kashmala Qasim
+title: 'Workshop: Kashmala Qasim'
 description: >-
   Kashmala Qasim is a PhD Candidate, York University. She completed her
   undergraduate studies in Psychology from the University of Toronto and
