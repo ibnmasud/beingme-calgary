@@ -1,5 +1,5 @@
 ---
-title: Workshop by Samiya Ahmed
+title: 'Workshop: Samiya Ahmed'
 description: >-
   Samiya Abdi currently holds the position of a Health Promotion Consultant &
   Program Planning and Evaluation Specialist. Samiya has over 10 years of
