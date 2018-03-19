@@ -1,5 +1,5 @@
 ---
-title: Natasha Persaud
+title: 'Workshop: Natasha Persaud'
 description: >-
   Natasha Persaud is a Partner at Formative LLP where she practices Human Rights
   and Employment Law.  She is also an Adjunct Faculty Member at Osgoode Hall Law
