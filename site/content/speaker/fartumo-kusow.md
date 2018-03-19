@@ -1,5 +1,5 @@
 ---
-title: Fartumo Kusow
+title: 'Workshop: Fartumo Kusow'
 description: >-
   Fartumo Kusow was born in Somalia and immigrated to Canada at the start of the
   civil war in Somalia. Her first novel, Amran, was serialized in October Star,
