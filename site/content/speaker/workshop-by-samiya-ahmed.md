@@ -12,6 +12,7 @@ description: >-
   transformational learning. Samiya holds a Master’s degree in Public Health and
   a Graduate diploma in Social Innovation and Systems Thinking from the
   University of Waterloo.
+image: /img/bm_samiya ahmed.jpg
 type: speaker
 ---
 
