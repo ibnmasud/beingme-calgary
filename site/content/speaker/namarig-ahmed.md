@@ -1,5 +1,5 @@
 ---
-title: Namarig Ahmed
+title: 'Workshop: Namarig Ahmed'
 description: >-
   Namarig Ahmed is a nurse who has worked in areas of mental health, addictions,
   palliative care and sexual assault and domestic care. She has completed her
