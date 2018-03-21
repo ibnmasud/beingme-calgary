@@ -4067,7 +4067,7 @@
 	  border: 1px solid aliceblue;
 	  padding-left: 1em !important;
 	  padding-right: 1em !important;
-	  width:24%;
+	  width:19%;
 	  border-radius: 10px;
 	  background-color: #f0f8ff57;
 	}
@@ -4100,6 +4100,7 @@
 	#tab1:checked ~ #content1,
 	#tab2:checked ~ #content2,
 	#tab3:checked ~ #content3,
+	#tab5:checked ~ #content5,
 	#tab4:checked ~ #content4 {
 	  display: block;
 	}

@@ -5,6 +5,6 @@
     <div class="col-12 col-md-12" style="padding: 10px;">
         <div class="row" style="border-color: aliceblue;border-width: 1px;border-style: solid;margin-right: -15px;margin-left: -15px;border-radius: 10px;">{{ if isset .Params "starttime"}}<div class="col-3" style="border-right-color: aliceblue;border-right-width: 1px;border-right-style: solid;padding: 20px;display: flex;align-items: center;">
         {{ .Params.startTime }}</div>{{ end }}
-        <div class="col-9" style="padding: 20px;"><strong>{{ .Params.title }}</strong><br>{{ .Params.speaker }}</div></div></div>{{ end }}{{ end }}
+        <div class="col-9" style="padding: 20px;"><strong>{{ .Params.title }}</strong>{{ if isset .Params "desc"}}<br>{{ .Params.desc }}{{ end }}<br>{{ .Params.speaker }}</div></div></div>{{ end }}{{ end }}
     
 </div>

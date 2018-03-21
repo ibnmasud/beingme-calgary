@@ -23,6 +23,7 @@ collections: # A list of collections the CMS should be able to edit
     fields: # The fields each document in this collection have
       - {label: "Name", name: "title", widget: "string"}
       - {label: "link", name: "link", widget: "string"}
+      - {label: "Order", name: "ord", widget: "number", default: 0, valueType: "int"}
       - {label: "Image", name: "image", widget: "image", required: true}
       - {label: "Type", name: "type", widget: "hidden", default: "sponsor"}
   - name: "speaker" # Used in routes, ie.: /admin/collections/:slug/edit
@@ -60,20 +61,52 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "desc", widget: "string"}
       - {label: "Speaker", name: "speaker", widget: "string", required: false}
       - {label: "Start Time", name: "startTime", widget: "string", required: false}
       - {label: "Type", name: "type", widget: "hidden", default: "programmain"}
 
       
   - name: "workshop" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Workshops" # Used in the UI, ie.: "New Post"
+    label: "Workshops A" # Used in the UI, ie.: "New Post"
     folder: "site/content/workshop" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "desc", widget: "string"}
       - {label: "Speaker", name: "speaker", widget: "string", required: false}
       - {label: "Start Time", name: "startTime", widget: "string", required: false}
       - {label: "Type", name: "type", widget: "hidden", default: "workshop"}
+  - name: "workshop2" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Workshops B" # Used in the UI, ie.: "New Post"
+    folder: "site/content/workshop2" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "desc", widget: "string"}
+      - {label: "Speaker", name: "speaker", widget: "string", required: false}
+      - {label: "Start Time", name: "startTime", widget: "string", required: false}
+      - {label: "Type", name: "type", widget: "hidden", default: "workshop2"}
+  - name: "workshop3" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Prayer Hall" # Used in the UI, ie.: "New Post"
+    folder: "site/content/workshop3" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "desc", widget: "string"}
+      - {label: "Speaker", name: "speaker", widget: "string", required: false}
+      - {label: "Start Time", name: "startTime", widget: "string", required: false}
+      - {label: "Type", name: "type", widget: "hidden", default: "workshop3"}
+  - name: "workshop4" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Expert Studio" # Used in the UI, ie.: "New Post"
+    folder: "site/content/workshop4" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "desc", widget: "string"}
+      - {label: "Speaker", name: "speaker", widget: "string", required: false}
+      - {label: "Start Time", name: "startTime", widget: "string", required: false}
+      - {label: "Type", name: "type", widget: "hidden", default: "workshop4"}
   - name: "bus" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Bus" # Used in the UI, ie.: "New Post"
     folder: "site/content/transportation" # The path to the folder where the documents are stored
@@ -107,20 +140,10 @@ collections: # A list of collections the CMS should be able to edit
         name: "home"
         fields:
           - {label: Title, name: title, widget: string}
-          - {label: Subtitle, name: subtitle, widget: string}
-          - {label: Image, name: image, widget: image}
-          - {label: "Blurb", name: blurb, widget: object, fields: [
-              {label: "Heading", name: "heading", widget: string},
-              {label: "Text", name: "text", widget: "text"}]}
-          - {label: "Intro", name: intro, widget: object, fields: [
-              {label: "Heading", name: "heading", widget: string},
-              {label: "Text", name: "text", widget: "text"}]}
-          - {label: "Products", name: products, widget: list, fields: [
-              {label: "Image", name: "image", widget: "image"},
-              {label: "Text", name: "text", widget: "text"}]}
-          - {label: "Values", name: "values", widget: "object", fields: [
-              {label: "Heading", name: "heading", widget: string},
-              {label: "Text", name: "text", widget: "text"}]}
+          - {label: Email Link, name: email, widget: string}
+          - {label: Ticket Link, name: ticket, widget: string}
+          
+          
       - file: "site/content/contact/_index.md"
         label: "Contact Page"
         name: "contact"
@@ -128,39 +151,3 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Title, name: title, widget: string}
           - {label: Logo, name: logo, widget: image}
           - {label: Body, name: body, widget: markdown}
-          - label: Contact Entries
-            name: contact_entries
-            widget: list
-            fields:
-              - label: Heading
-                name: heading
-                widget: string
-              - label: Text
-                name: text
-                widget: text
-      - file: "site/content/products/_index.md"
-        label: "Products Page"
-        name: "products"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Image, name: image, widget: image}
-          - {label: Heading, name: heading, widget: string}
-          - {label: Description, name: description, widget: string}
-          - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
-          - {label: Main, name: main, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Image1, name: image1, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image2, name: image2, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image3, name: image3, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
-          - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}]}
-          - {label: Full_image, name: full_image, widget: image}
-          - {label: Pricing, name: pricing, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: string}, {label: Plans, name: plans, widget: list, fields: [{label: Plan, name: plan, widget: string}, {label: Price, name: price, widget: string}, {label: Description, name: description, widget: string}, {label: Items, name: items, widget: list}]}]}
-      - file: "site/content/values/_index.md"
-        label: "Values Page"
-        name: "values"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Image, name: image, widget: image}
-          - label: Values
-            name: values
-            widget: list
-            fields:
-              - {label: Heading, name: heading, widget: string}
-              - {label: Text, name: text, widget: text}
-              - {label: Image, name: imageUrl, widget: image}

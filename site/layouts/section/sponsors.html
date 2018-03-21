@@ -28,9 +28,9 @@
             
             <div class="box alt">
                 <div class="row uniform">
-                        {{ range $i,$e:= where .Site.Pages "Type" "sponsor" }}{{ if isset .Params "title"}}
-
-                    
+                        {{ $filtered:= where .Site.Pages "Type" "sponsor"}}
+                        {{ $sorted := sort $filtered ".Params.ord"}}
+                        {{ range $i,$e:=$sorted }}{{ if isset .Params "title"}}                    
                         <section class="4u{{ if eq (mod (add $i 1) 3) 0}}${{ end }} 6u{{ if eq (mod (add $i 1) 2) 0}}${{ end }}(medium) 12u$(xsmall)">
                                 <a href="{{ .Params.link }}" target="_blank"><img alt="{{ .Params.title }}" style="border-radius: 10px;width: auto;
                                     height: auto;

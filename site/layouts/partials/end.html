@@ -17,5 +17,27 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="assets/js/main.js"></script>
+<script src="/assets/js/flipclock.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	function get_uptime() {
+    t1 = new Date(2018, 2, 31, 8, 0, 0, 0)
+    t2 = new Date()
+    dif = t1.getTime() - t2.getTime()
+
+    seconds = dif / 1000;
+	Seconds_Between_Dates = Math.abs(seconds);
+	return Seconds_Between_Dates
+    //document.getElementById("counter").innerHTML = Seconds_Between_Dates;
+    //setTimeout(get_uptime, 1000);
+}
+
+	var clock = $('.clock').FlipClock(get_uptime(), {
+			clockFace: 'DailyCounter',
+			countdown: true
+		});
+		});
+	
+	</script>
 	</body>
 </html>
